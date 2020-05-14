@@ -16,7 +16,7 @@ class Comment extends React.Component {
 
                     return (<div class="comment">
                         <a class="avatar">
-                            <img src={Faker.image.avatar()} />
+                            <img src={Faker.image.avatar()} alt = 'avatar' />
                         </a>
                         <div class="content">
                             <a class="author">{Faker.name.firstName()}</a>

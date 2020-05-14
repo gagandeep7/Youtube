@@ -5,7 +5,7 @@ import youtube from '../api/Youtube';
 import VideoList from "./VideoList";
 import VideoDetail from './VideoDetail';
 import Navbar from './Navbar';
-
+import './styles.css'
 // create App
 class App extends React.Component {
 
@@ -48,7 +48,7 @@ class App extends React.Component {
                     <SearchBar onInputSubmit={this.onInputSubmit} />
                     {/* to display either trending page or searched page */}
 
-                    {this.state.num == 1 ?
+                    {this.state.num === 1 ?
 
                         // intially show home page
                         <div className='ui grid'>
@@ -61,8 +61,8 @@ class App extends React.Component {
 
                         :
                         // if there is search then this
-                        <div className='ui grid'>
-                            <div className='ui row'>
+                        <div className='ui grid '>
+                            <div className='ui row' id = "web">
                                 <div className='eleven wide column' >
                                     <VideoDetail video={this.state.selectedVideo} />
                                 </div>
@@ -70,7 +70,14 @@ class App extends React.Component {
                                     <VideoList onVideoSelect={this.onVideoSelect} videos={this.state.videos} />
                                 </div>
                             </div>
+                            <div className='ui row' id = "mob">
+                                <div className='sixteen wide column' >
+                                    <VideoDetail video={this.state.selectedVideo} />
+                                </div>
+                            </div>
                         </div>
+
+
                     }
 
                 </div>
