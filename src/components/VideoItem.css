@@ -7,26 +7,20 @@
 
 
 .video-item.item img {
-    max-width: 180px;
-}
-
-
-
-@media only screen
-  and (min-device-width: 300px)
-  and (max-device-width: 812px)
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) {
-
-    .video-item.item .header{
-
-        font-size : xx-small;
-        letter-spacing: 0.2;
-    }
-
-.video-item.item img {
     max-width: 100px;
 }
+
+.video-item.item .header{
+
+    font-size : xx-small;
+    letter-spacing: 0.2;
+}
+@media only screen and (min-width: 768px){
+
+    .video-item.item img {
+        max-width: 180px;
+    }
+
 
 
 }
