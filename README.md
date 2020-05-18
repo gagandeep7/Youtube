@@ -2,6 +2,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 You can see it live at https://youtube7.surge.sh/
 
+![](https://github.com/gagandeep7/Youtube/blob/master/youtube.png)
+
 ## Available Scripts
 
 In the project directory, you can run:
